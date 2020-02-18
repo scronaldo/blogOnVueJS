@@ -1,10 +1,10 @@
 # cli-project
 
-> A Vue.js project
+> A Vue.js project - blog with Firebase DB
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 

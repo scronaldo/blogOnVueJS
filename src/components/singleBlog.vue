@@ -24,10 +24,10 @@ export default {
   created() {
     this.$http
       .get("https://vue-study-os.firebaseio.com/posts/" + this.id + ".json")
+      // get post by router's id
       .then(function(data) {
         // console.log(data);
         return data.json();
-        this.blog = data.body;
       })
       .then(data => {
         this.blog = data;

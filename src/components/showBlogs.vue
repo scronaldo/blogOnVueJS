@@ -29,15 +29,18 @@ export default {
         return data.json();
       })
       .then(data => {
+        // create id and blogs array out of received object
         const blogsArray = [];
         for (let key in data) {
           data[key].id = key;
           blogsArray.push(data[key]);
         }
-        blogsArray.reverse();
+        // uncomment reverse to show new firest
+        // blogsArray.reverse();
         this.blogs = blogsArray;
       });
   },
+  // array of mixins (in particular search filter comp property)
   mixins: [searchMixin]
 };
 </script>
