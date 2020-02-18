@@ -23,10 +23,10 @@ export default {
     };
   },
   created() {
-    this.$http
+    this.$axios
       .get("https://vue-study-os.firebaseio.com/posts.json")
-      .then(function(data) {
-        return data.json();
+      .then(function(res) {
+        return res.data;
       })
       .then(data => {
         // create id and blogs array out of received object
